@@ -1,6 +1,7 @@
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { AppLayoutComponent } from "./layout/app.layout.component";
+import { AuthGuard } from './services/guard/auth.guard';
 
 @NgModule({
     imports: [
@@ -8,13 +9,17 @@ import { AppLayoutComponent } from "./layout/app.layout.component";
             {
                 path: '', component: AppLayoutComponent,
                 children: [
-                    { path: '', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) }
+                    { 
+                        path: '', 
+                        // canActivate: [AuthGuard],
+                        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) 
+                    }
                 ]
             },
-            // { path: 'auth', loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule) },
+            // { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
             // { path: 'landing', loadChildren: () => import('./demo/components/landing/landing.module').then(m => m.LandingModule) },
             // { path: 'notfound', component: NotfoundComponent },
-            { path: '**', redirectTo: '/notfound' },
+            { path: '**', redirectTo: '' },
         ], { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload' })
     ],
     exports: [RouterModule]
