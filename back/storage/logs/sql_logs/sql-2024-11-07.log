@@ -1,0 +1,140 @@
+[2024-11-07 12:30:14] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 12:30:14                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 12:30:14] local.INFO: Execution time : 0.55 ms  
+[2024-11-07 12:30:14] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2024-11-07 12:30:14] local.INFO: DATA : tetse  
+[2024-11-07 12:30:14] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 12:30:14                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 12:30:14] local.INFO: Execution time : 0.99 ms  
+[2024-11-07 12:30:14] local.INFO: SQL QUERY : insert into `config_can_access_keys` (`key_label`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?)  
+[2024-11-07 12:30:14] local.INFO: DATA : tetse, , 2024-11-07 12:30:14, 2024-11-07 12:30:14  
+[2024-11-07 12:30:14] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 12:30:14                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 12:30:14] local.INFO: Execution time : 3.47 ms  
+[2024-11-07 12:30:14] local.INFO: SQL QUERY : select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'crm_depenses_db' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name  
+[2024-11-07 12:30:14] local.INFO: DATA :   
+[2024-11-07 12:30:14] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 12:30:14                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 12:30:14] local.INFO: Execution time : 2.01 ms  
+[2024-11-07 12:30:14] local.INFO: SQL QUERY : insert into `actions_logs` (`id_user`, `table_name`, `libelle_log`, `json_log_data`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)  
+[2024-11-07 12:30:14] local.INFO: DATA : 2, config_can_access_keys, Ajout d'un nouveau group de roles, {"key_label":"tetse"}, Ajout d'un nouveau group de roles, identifiant : 52, 2024-11-07 12:30:14, 2024-11-07 12:30:14  
+[2024-11-07 12:34:47] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 12:34:47                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 12:34:47] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2024-11-07 12:34:47] local.INFO: DATA : tetse  
+[2024-11-07 12:34:47] local.INFO: EXECUTION TIME : 0.57 ms  
+[2024-11-07 14:12:18] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:12:18                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:12:18] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2024-11-07 14:12:18] local.INFO: DATA : test 132  
+[2024-11-07 14:12:18] local.INFO: EXECUTION TIME : 0.56 ms  
+[2024-11-07 14:12:18] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:12:18                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:12:18] local.INFO: SQL QUERY : insert into `config_can_access_keys` (`key_label`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?)  
+[2024-11-07 14:12:18] local.INFO: DATA : test 132, rrr, 2024-11-07 14:12:18, 2024-11-07 14:12:18  
+[2024-11-07 14:12:18] local.INFO: EXECUTION TIME : 1.16 ms  
+[2024-11-07 14:13:15] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:13:15                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:13:15] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2024-11-07 14:13:15] local.INFO: DATA : tets 21321  
+[2024-11-07 14:13:15] local.INFO: EXECUTION TIME : 0.53 ms  
+[2024-11-07 14:13:15] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:13:15                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:13:15] local.INFO: SQL QUERY : insert into `config_can_access_keys` (`key_label`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?)  
+[2024-11-07 14:13:15] local.INFO: DATA : tets 21321, zfaefa, 2024-11-07 14:13:15, 2024-11-07 14:13:15  
+[2024-11-07 14:13:15] local.INFO: EXECUTION TIME : 10.34 ms  
+[2024-11-07 14:13:41] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:13:41                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:13:41] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2024-11-07 14:13:41] local.INFO: DATA : tets 21321  
+[2024-11-07 14:13:41] local.INFO: EXECUTION TIME : 0.44 ms  
+[2024-11-07 14:13:41] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:13:41                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:13:41] local.INFO: SQL QUERY : insert into `config_can_access_keys` (`key_label`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?)  
+[2024-11-07 14:13:41] local.INFO: DATA : tets 21321, zfaefa, 2024-11-07 14:13:41, 2024-11-07 14:13:41  
+[2024-11-07 14:13:41] local.INFO: EXECUTION TIME : 10.57 ms  
+[2024-11-07 14:15:31] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:15:31                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:15:31] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2024-11-07 14:15:31] local.INFO: DATA : tets 21321  
+[2024-11-07 14:15:31] local.INFO: EXECUTION TIME : 0.51 ms  
+[2024-11-07 14:15:31] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:15:31                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:15:31] local.INFO: SQL QUERY : insert into `config_can_access_keys` (`key_label`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?)  
+[2024-11-07 14:15:31] local.INFO: DATA : tets 21321, zfaefa, 2024-11-07 14:15:31, 2024-11-07 14:15:31  
+[2024-11-07 14:15:31] local.INFO: EXECUTION TIME : 1.15 ms  
+[2024-11-07 14:15:57] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:15:57                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:15:57] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2024-11-07 14:15:57] local.INFO: DATA : tets 21321  
+[2024-11-07 14:15:57] local.INFO: EXECUTION TIME : 0.61 ms  
+[2024-11-07 14:15:57] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:15:57                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:15:57] local.INFO: SQL QUERY : insert into `config_can_access_keys` (`key_label`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?)  
+[2024-11-07 14:15:57] local.INFO: DATA : tets 21321, zfaefa, 2024-11-07 14:15:57, 2024-11-07 14:15:57  
+[2024-11-07 14:15:57] local.INFO: EXECUTION TIME : 0.83 ms  
+[2024-11-07 14:16:05] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:16:05                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:16:05] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2024-11-07 14:16:05] local.INFO: DATA : tets 21321  
+[2024-11-07 14:16:05] local.INFO: EXECUTION TIME : 0.63 ms  
+[2024-11-07 14:16:05] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:16:05                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:16:05] local.INFO: SQL QUERY : insert into `config_can_access_keys` (`key_label`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?)  
+[2024-11-07 14:16:05] local.INFO: DATA : tets 21321, zfaefa, 2024-11-07 14:16:05, 2024-11-07 14:16:05  
+[2024-11-07 14:16:05] local.INFO: EXECUTION TIME : 0.68 ms  
+[2024-11-07 14:16:05] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:16:05                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:16:05] local.INFO: SQL QUERY : insert into `config_can_access` (`id_can_access_key`, `id_role`) values (?, ?), (?, ?)  
+[2024-11-07 14:16:05] local.INFO: DATA : 58, 1, 58, 2  
+[2024-11-07 14:16:05] local.INFO: EXECUTION TIME : 0.5 ms  
+[2024-11-07 14:16:05] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:16:05                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:16:05] local.INFO: SQL QUERY : select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'crm_depenses_db' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name  
+[2024-11-07 14:16:05] local.INFO: DATA :   
+[2024-11-07 14:16:05] local.INFO: EXECUTION TIME : 3 ms  
+[2024-11-07 14:16:05] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 07-11-2024 14:16:05                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2024-11-07 14:16:05] local.INFO: SQL QUERY : insert into `actions_logs` (`id_user`, `table_name`, `libelle_log`, `json_log_data`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)  
+[2024-11-07 14:16:05] local.INFO: DATA : 2, config_can_access_keys, Ajout d'un nouveau group de roles, {"key_label":"tets 21321","description":"zfaefa","roles":[{"id":1,"libelle_role":"Administrateur","value":1,"label":"Administrateur"},{"id":2,"libelle_role":"Employ\u00e9","value":2,"label":"Employ\u00e9"}]}, Ajout d'un nouveau group de roles, identifiant : 58, 2024-11-07 14:16:05, 2024-11-07 14:16:05  
+[2024-11-07 14:16:05] local.INFO: EXECUTION TIME : 1.42 ms  

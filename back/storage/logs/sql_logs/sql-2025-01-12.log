@@ -1,0 +1,35 @@
+[2025-01-12 19:50:45] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 12-01-2025 19:50:45                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2025-01-12 19:50:45] local.INFO: SQL QUERY : select * from `config_can_access_keys` where (`key_label` = ?) limit 1  
+[2025-01-12 19:50:45] local.INFO: DATA : group_roles_for_devises  
+[2025-01-12 19:50:45] local.INFO: EXECUTION TIME : 0.74 ms  
+[2025-01-12 19:50:45] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 12-01-2025 19:50:45                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2025-01-12 19:50:45] local.INFO: SQL QUERY : insert into `config_can_access_keys` (`key_label`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?)  
+[2025-01-12 19:50:45] local.INFO: DATA : group_roles_for_devises, , 2025-01-12 19:50:45, 2025-01-12 19:50:45  
+[2025-01-12 19:50:45] local.INFO: EXECUTION TIME : 1.06 ms  
+[2025-01-12 19:50:45] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 12-01-2025 19:50:45                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2025-01-12 19:50:45] local.INFO: SQL QUERY : insert into `config_can_access` (`id_can_access_key`, `id_role`) values (?, ?)  
+[2025-01-12 19:50:45] local.INFO: DATA : 12, 1  
+[2025-01-12 19:50:45] local.INFO: EXECUTION TIME : 0.65 ms  
+[2025-01-12 19:50:45] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 12-01-2025 19:50:45                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2025-01-12 19:50:45] local.INFO: SQL QUERY : select table_name as `name`, (data_length + index_length) as `size`, table_comment as `comment`, engine as `engine`, table_collation as `collation` from information_schema.tables where table_schema = 'crm_devise_db' and table_type in ('BASE TABLE', 'SYSTEM VERSIONED') order by table_name  
+[2025-01-12 19:50:45] local.INFO: DATA :   
+[2025-01-12 19:50:45] local.INFO: EXECUTION TIME : 5.78 ms  
+[2025-01-12 19:50:45] local.INFO: 
+            [ -------------------------------------------------------------------------- ]
+            [                                 12-01-2025 19:50:45                        ]
+            [ -------------------------------------------------------------------------- ]  
+[2025-01-12 19:50:45] local.INFO: SQL QUERY : insert into `actions_logs` (`id_user`, `table_name`, `libelle_log`, `json_log_data`, `description`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)  
+[2025-01-12 19:50:45] local.INFO: DATA : 2, config_can_access_keys, Ajout d'un nouveau group de roles, {"key_label":"group_roles_for_devises","description":null,"roles":[{"id":1,"libelle_role":"Administrateur","value":1,"label":"Administrateur"}]}, Ajout d'un nouveau group de roles, identifiant : 12, 2025-01-12 19:50:45, 2025-01-12 19:50:45  
+[2025-01-12 19:50:45] local.INFO: EXECUTION TIME : 2.51 ms  

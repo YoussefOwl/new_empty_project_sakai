@@ -1,0 +1,99 @@
+[2024-11-28 16:57:04] local.ERROR: Command "make:migrations" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migrations\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test
+    make:view at C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php:737)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(266): Symfony\\Component\\Console\\Application->find()
+#1 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#2 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#3 C:\\Apache24\\htdocs\\crm_depenses\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#4 {main}
+"} 
+[2024-11-28 16:57:16] local.ERROR: The "--tabel" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--tabel\" option does not exist. at C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Input\\ArgvInput.php:223)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Input\\ArgvInput.php(150): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption()
+#1 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Input\\ArgvInput.php(85): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption()
+#2 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Input\\ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#3 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Input\\Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Command\\Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind()
+#5 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#6 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#7 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#9 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#10 C:\\Apache24\\htdocs\\crm_depenses\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main}
+"} 
+[2024-11-28 17:02:25] local.ERROR: File does not exist at path C:\Apache24\htdocs\crm_depenses\api//databse/migrations/users/2024_11_28_165725_add_column_is_admin_to_users.php. {"exception":"[object] (Illuminate\\Contracts\\Filesystem\\FileNotFoundException(code: 0): File does not exist at path C:\\Apache24\\htdocs\\crm_depenses\\api//databse/migrations/users/2024_11_28_165725_add_column_is_admin_to_users.php. at C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:152)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(574): Illuminate\\Filesystem\\Filesystem->requireOnce()
+#1 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(117): Illuminate\\Database\\Migrations\\Migrator->requireFiles()
+#2 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(90): Illuminate\\Database\\Migrations\\Migrator->run()
+#3 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#4 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#5 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#6 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#8 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#9 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#10 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#11 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#12 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#13 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#14 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#15 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#16 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#17 C:\\Apache24\\htdocs\\crm_depenses\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#18 {main}
+"} 

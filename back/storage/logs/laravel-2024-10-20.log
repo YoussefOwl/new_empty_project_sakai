@@ -1,0 +1,346 @@
+[2024-10-20 14:08:03] local.ERROR: No arguments expected for "migrate" command, got "depenses/2024_10_20_140347_create_depense_multimedias_table.php". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"migrate\" command, got \"depenses/2024_10_20_140347_create_depense_multimedias_table.php\". at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Input\\ArgvInput.php:196)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Input\\ArgvInput.php(89): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Input\\ArgvInput.php(74): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Input\\Input.php(56): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Command\\Command.php(285): Symfony\\Component\\Console\\Input\\Input->bind()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#10 {main}
+"} 
+[2024-10-20 14:08:17] local.ERROR: File does not exist at path C:\Apache24\htdocs\yariss_logistics\api/depenses/2024_10_20_140347_create_depense_multimedias_table.php. {"exception":"[object] (Illuminate\\Contracts\\Filesystem\\FileNotFoundException(code: 0): File does not exist at path C:\\Apache24\\htdocs\\yariss_logistics\\api/depenses/2024_10_20_140347_create_depense_multimedias_table.php. at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:152)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(574): Illuminate\\Filesystem\\Filesystem->requireOnce()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(117): Illuminate\\Database\\Migrations\\Migrator->requireFiles()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(90): Illuminate\\Database\\Migrations\\Migrator->run()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#10 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#11 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#12 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#13 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#14 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#15 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#16 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#17 C:\\Apache24\\htdocs\\yariss_logistics\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#18 {main}
+"} 
+[2024-10-20 14:08:43] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'depenses' doesn't exist in table (Connection: yariss_logistics_db, SQL: alter table `depense_multimedias` add constraint `depense_multimedias_depenses_foreign` foreign key (`depenses`) references `id_depense` (`id`)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'depenses' doesn't exist in table (Connection: yariss_logistics_db, SQL: alter table `depense_multimedias` add constraint `depense_multimedias_depenses_foreign` foreign key (`depenses`) references `id_depense` (`id`)) at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:829)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(576): Illuminate\\Database\\Connection->run()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(110): Illuminate\\Database\\Connection->statement()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(602): Illuminate\\Database\\Schema\\Blueprint->build()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(456): Illuminate\\Database\\Schema\\Builder->build()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Database\\Schema\\Builder->create()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\database\\migrations\\depenses\\2024_10_20_140347_create_depense_multimedias_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(493): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(410): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(419): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#10 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#11 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(37): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(756): Illuminate\\Console\\View\\Components\\Task->render()
+#13 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->write()
+#14 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(181): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#15 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(124): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#16 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(90): Illuminate\\Database\\Migrations\\Migrator->run()
+#17 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#19 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#21 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#22 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#23 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#24 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#25 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#26 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#27 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#28 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#29 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#30 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#31 C:\\Apache24\\htdocs\\yariss_logistics\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#32 {main}
+
+[previous exception] [object] (PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1072 Key column 'depenses' doesn't exist in table at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:587)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(587): PDOStatement->execute()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(816): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(576): Illuminate\\Database\\Connection->run()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(110): Illuminate\\Database\\Connection->statement()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(602): Illuminate\\Database\\Schema\\Blueprint->build()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(456): Illuminate\\Database\\Schema\\Builder->build()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Database\\Schema\\Builder->create()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\database\\migrations\\depenses\\2024_10_20_140347_create_depense_multimedias_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(493): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#10 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(410): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#11 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(419): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#13 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(37): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#14 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(756): Illuminate\\Console\\View\\Components\\Task->render()
+#15 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->write()
+#16 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(181): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#17 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(124): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#18 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(90): Illuminate\\Database\\Migrations\\Migrator->run()
+#19 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#20 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#21 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#22 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#24 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#25 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#26 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#27 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#28 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#29 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#30 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#31 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#32 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#33 C:\\Apache24\\htdocs\\yariss_logistics\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#34 {main}
+"} 
+[2024-10-20 14:09:04] local.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'depense_multimedias' already exists (Connection: yariss_logistics_db, SQL: create table `depense_multimedias` (`id` bigint unsigned not null auto_increment primary key, `id_depense` bigint unsigned not null, `id_user_createur` bigint unsigned not null, `file_name` varchar(191) not null, `file_extension` varchar(191) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci' engine = InnoDB) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'depense_multimedias' already exists (Connection: yariss_logistics_db, SQL: create table `depense_multimedias` (`id` bigint unsigned not null auto_increment primary key, `id_depense` bigint unsigned not null, `id_user_createur` bigint unsigned not null, `file_name` varchar(191) not null, `file_extension` varchar(191) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci' engine = InnoDB) at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:829)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(576): Illuminate\\Database\\Connection->run()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(110): Illuminate\\Database\\Connection->statement()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(602): Illuminate\\Database\\Schema\\Blueprint->build()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(456): Illuminate\\Database\\Schema\\Builder->build()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Database\\Schema\\Builder->create()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\database\\migrations\\depenses\\2024_10_20_140347_create_depense_multimedias_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(493): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(410): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(419): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#10 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#11 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(37): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(756): Illuminate\\Console\\View\\Components\\Task->render()
+#13 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->write()
+#14 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(181): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#15 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(124): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#16 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(90): Illuminate\\Database\\Migrations\\Migrator->run()
+#17 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#18 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#19 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#21 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#22 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#23 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#24 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#25 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#26 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#27 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#28 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#29 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#30 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#31 C:\\Apache24\\htdocs\\yariss_logistics\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#32 {main}
+
+[previous exception] [object] (PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'depense_multimedias' already exists at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:587)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(587): PDOStatement->execute()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(816): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(783): Illuminate\\Database\\Connection->runQueryCallback()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(576): Illuminate\\Database\\Connection->run()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(110): Illuminate\\Database\\Connection->statement()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(602): Illuminate\\Database\\Schema\\Blueprint->build()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(456): Illuminate\\Database\\Schema\\Builder->build()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Database\\Schema\\Builder->create()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\database\\migrations\\depenses\\2024_10_20_140347_create_depense_multimedias_table.php(14): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(493): Illuminate\\Database\\Migrations\\Migration@anonymous->up()
+#10 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(410): Illuminate\\Database\\Migrations\\Migrator->runMethod()
+#11 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(419): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#12 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#13 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\View\\Components\\Task.php(37): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#14 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(756): Illuminate\\Console\\View\\Components\\Task->render()
+#15 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(216): Illuminate\\Database\\Migrations\\Migrator->write()
+#16 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(181): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#17 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(124): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#18 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(90): Illuminate\\Database\\Migrations\\Migrator->run()
+#19 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#20 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#21 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#22 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#24 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#25 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#26 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#27 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#28 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#29 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#30 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#31 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#32 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#33 C:\\Apache24\\htdocs\\yariss_logistics\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#34 {main}
+"} 
+[2024-10-20 15:07:09] local.ERROR: Method App\Http\Controllers\Depenses\DepenseMultimedia::success does not exist. {"userId":2,"exception":"[object] (BadMethodCallException(code: 0): Method App\\Http\\Controllers\\Depenses\\DepenseMultimedia::success does not exist. at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php:68)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Http\\Controllers\\Depenses\\DepenseMultimedia.php(50): Illuminate\\Routing\\Controller->__call()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Depenses\\DepenseMultimedia->AfficherPjDepense()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Http\\Middleware\\CheckRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\CheckRole->handle()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#10 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#11 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#12 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(90): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#13 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#14 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Http\\Middleware\\JwtMiddlewareAdmin.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\JwtMiddlewareAdmin->handle()
+#16 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#18 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#19 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#20 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#21 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#22 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#23 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Http\\Middleware\\CorsPolicy.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#24 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\CorsPolicy->handle()
+#25 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#27 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#28 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#30 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#32 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#33 C:\\Apache24\\htdocs\\yariss_logistics\\api\\public\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle()
+#34 C:\\Apache24\\htdocs\\yariss_logistics\\api\\server.php(21): require_once('...')
+#35 {main}
+"} 
+[2024-10-20 15:07:18] local.ERROR: Method App\Http\Controllers\Depenses\DepenseMultimedia::success does not exist. {"userId":2,"exception":"[object] (BadMethodCallException(code: 0): Method App\\Http\\Controllers\\Depenses\\DepenseMultimedia::success does not exist. at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php:68)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Http\\Controllers\\Depenses\\DepenseMultimedia.php(50): Illuminate\\Routing\\Controller->__call()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Depenses\\DepenseMultimedia->AfficherPjDepense()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Http\\Middleware\\CheckRole.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\CheckRole->handle()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#10 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#11 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#12 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(90): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#13 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#14 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Http\\Middleware\\JwtMiddlewareAdmin.php(23): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\JwtMiddlewareAdmin->handle()
+#16 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(805): Illuminate\\Pipeline\\Pipeline->then()
+#18 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack()
+#19 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute()
+#20 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute()
+#21 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch()
+#22 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#23 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Http\\Middleware\\CorsPolicy.php(20): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#24 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\CorsPolicy->handle()
+#25 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#27 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#28 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#30 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then()
+#32 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#33 C:\\Apache24\\htdocs\\yariss_logistics\\api\\public\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle()
+#34 C:\\Apache24\\htdocs\\yariss_logistics\\api\\server.php(21): require_once('...')
+#35 {main}
+"} 
+[2024-10-20 15:35:08] local.ERROR: Command "make:commande" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:commande\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test
+    make:view at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php:737)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(266): Symfony\\Component\\Console\\Application->find()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#4 {main}
+"} 
+[2024-10-20 15:45:16] local.ERROR: Illuminate\Database\Query\Builder::insert(): Argument #1 ($values) must be of type array, Illuminate\Support\Collection given, called in C:\Apache24\htdocs\yariss_logistics\api\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php on line 1969 {"exception":"[object] (TypeError(code: 0): Illuminate\\Database\\Query\\Builder::insert(): Argument #1 ($values) must be of type array, Illuminate\\Support\\Collection given, called in C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php on line 1969 at C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php:3427)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1969): Illuminate\\Database\\Query\\Builder->insert()
+#1 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->__call()
+#2 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2334): Illuminate\\Database\\Eloquent\\Model->forwardCallTo()
+#3 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2346): Illuminate\\Database\\Eloquent\\Model->__call()
+#4 C:\\Apache24\\htdocs\\yariss_logistics\\api\\app\\Console\\Commands\\migrationFileDepenses.php(37): Illuminate\\Database\\Eloquent\\Model::__callStatic()
+#5 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Console\\Commands\\migrationFileDepenses->handle()
+#6 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#8 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#9 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#10 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#11 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#12 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#13 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#14 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#15 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#16 C:\\Apache24\\htdocs\\yariss_logistics\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#17 C:\\Apache24\\htdocs\\yariss_logistics\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#18 {main}
+"} 

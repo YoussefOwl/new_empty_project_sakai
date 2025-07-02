@@ -1,0 +1,20 @@
+[2025-07-02 11:12:30] local.ERROR: filemtime(): stat failed for C:\Apache24\htdocs\new_empty_project_sakai\back\.env {"exception":"[object] (ErrorException(code: 0): filemtime(): stat failed for C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\.env at C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php:102)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(255): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#2 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ServeCommand.php(102): filemtime()
+#3 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Console\\ServeCommand->handle()
+#4 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#6 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#7 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#8 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#9 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#10 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#11 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#12 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#13 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#14 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#15 C:\\Apache24\\htdocs\\new_empty_project_sakai\\back\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#16 {main}
+"} 

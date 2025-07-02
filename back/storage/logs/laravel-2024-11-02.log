@@ -1,0 +1,22 @@
+[2024-11-02 11:03:24] local.ERROR: File does not exist at path C:\Apache24\htdocs\crm_depenses\api//databse/migrations/users/2024_11_02_110217_add_if_considered_in_reports_to_users.php. {"exception":"[object] (Illuminate\\Contracts\\Filesystem\\FileNotFoundException(code: 0): File does not exist at path C:\\Apache24\\htdocs\\crm_depenses\\api//databse/migrations/users/2024_11_02_110217_add_if_considered_in_reports_to_users.php. at C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:152)
+[stacktrace]
+#0 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(574): Illuminate\\Filesystem\\Filesystem->requireOnce()
+#1 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(117): Illuminate\\Database\\Migrations\\Migrator->requireFiles()
+#2 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(90): Illuminate\\Database\\Migrations\\Migrator->run()
+#3 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(633): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#4 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(83): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#5 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#6 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#8 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#9 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call()
+#10 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call()
+#11 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute()
+#12 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run()
+#13 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(1096): Illuminate\\Console\\Command->run()
+#14 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand()
+#15 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun()
+#16 C:\\Apache24\\htdocs\\crm_depenses\\api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run()
+#17 C:\\Apache24\\htdocs\\crm_depenses\\api\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle()
+#18 {main}
+"} 
