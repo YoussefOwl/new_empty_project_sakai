@@ -4,7 +4,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { MenuService } from './app.menu.service';
-import { LayoutService } from '../services/app.layout.service';
+import { LayoutService } from './service/app.layout.service';
 
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
@@ -45,8 +45,7 @@ import { LayoutService } from '../services/app.layout.service';
             })),
             transition('collapsed <=> expanded', animate('400ms cubic-bezier(0.86, 0, 0.07, 1)'))
         ])
-    ],
-    standalone: false
+    ]
 })
 export class AppMenuitemComponent implements OnInit, OnDestroy {
 

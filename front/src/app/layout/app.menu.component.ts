@@ -1,11 +1,10 @@
 import { OnInit } from '@angular/core';
 import { Component } from '@angular/core';
-import { LayoutService } from '../services/app.layout.service';
+import { LayoutService } from './service/app.layout.service';
 
 @Component({
     selector: 'app-menu',
-    templateUrl: './app.menu.component.html',
-    standalone: false
+    templateUrl: './app.menu.component.html'
 })
 export class AppMenuComponent implements OnInit {
 
